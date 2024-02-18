@@ -20,7 +20,15 @@
 ====================================================================
 
 ***/
-
+#confetti{
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+}
+/* tab */
+/* tab end */
 .slider-one{
 	position:relative;
 }
@@ -211,16 +219,19 @@
 	-ms-transition: all 900ms ease;
 	-o-transition: all 900ms ease;
 	transition: all 900ms ease;
+	z-index: 999;
 }
 
 .slider-one .slider-one_buttons .theme-btn{
 	margin-right:var(--margin-right-15);
+	z-index: 999;
 }
 
 .slider-one .active .slider-one_buttons{
 	opacity: 1;
 	transform: scaleY(1);
 	transition-delay:1200ms;
+	z-index: 999;
 }
 
 .slider-one .owl-dots{
@@ -459,10 +470,10 @@
 
 .about-one_bold-text{
 	position: relative;
-	font-weight: 700;
-	line-height: 36px;
+	font-weight: 500;
+	line-height: 25px;
 	color: var(--color-two);
-	font-size: var(--font-20);
+	font-size: var(--font-15);
 	margin-bottom: var(--margin-bottom-20);
 }
 
@@ -556,7 +567,7 @@
 	bottom: 0px;
 	left: 0px;
 	opacity: 0.80;
-	background-color: var(--color-six);
+	/* background-color: var(--color-six); */
 }
 
 .counter-one_block{
@@ -617,6 +628,7 @@
 .speaker-block_one{
 	position: relative;
 	margin-bottom: var(--margin-bottom-40);
+	z-index: 99;
 }
 
 .speaker-block_one-inner{
@@ -947,6 +959,7 @@
 .leadership-tabs{
 	position:relative;
 	margin-top:var(--margin-top-30);
+	z-index: 9;
 }
 
 .leadership-tabs .tab-btns{
@@ -3252,6 +3265,7 @@
 
 .price-block_two:nth-child(2) .btn-style-one .btn-wrap .text-one{
 	color: var(--white-color);
+	z-index: 999;
 }
 
 .price-block_two:nth-child(3) .theme-btn{
@@ -3260,6 +3274,7 @@
 
 .price-block_two:nth-child(3) .btn-style-one .btn-wrap .text-one{
 	color: var(--white-color);
+	z-index: 999;
 }
 
 /*** 
@@ -4086,7 +4101,7 @@
 	left: -80px;
 	top: 100px;
 	width: 523px;
-	height: 446px;
+	height: 350px;
 	z-index: 1;
 	background-repeat: no-repeat;
 }

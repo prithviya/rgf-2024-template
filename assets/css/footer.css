@@ -12,6 +12,7 @@
 	margin-top: -90px;
 	background: #2A00FC;
 	background: linear-gradient(to bottom, #2A00FC 0%, #160082 100%);
+	z-index: 999;
 }
 
 .main-footer .widgets-section{
@@ -84,9 +85,11 @@
 }
 
 .footer-bottom{
-	position: relative;
 	padding: 20px 0px;
-	background-color: var(--color-eight);
+    background-color: var(--color-eight);
+    position: fixed;
+    bottom: 0px !important;
+    width: 100%;
 }
 
 .copyright{

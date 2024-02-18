@@ -1160,6 +1160,7 @@
 	position:relative;
 	height:60px;
 	margin-left: var(--margin-left-10);
+	z-index: 99;
 }
 
 .hamburger {
