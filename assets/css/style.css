@@ -27,6 +27,74 @@
 	width: 100%;
 	z-index: 9;
 }
+.banner-slider{
+	background-image: url('../images/banner.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+}
+.event-higlight-img{
+    text-align: center;
+}
+.event-higlight-img img{
+    width: 100%;
+    max-width: 130px;
+    margin-bottom: 10px;
+}
+.banner-container{
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.spot-reg p
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg, #46214a 0%, #429ed0 30%, #df3019 57%, #4b0d39 70%, #d63b45 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    line-height: 3rem;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+@keyframes textclip {
+    to {
+      background-position: -200% center;
+    }
+  }
+  .blink {
+    animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .banner_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_images img{
+   width: 100%;
+   max-width: 600px;
+}
 /* tab */
 /* tab end */
 .slider-one{
@@ -219,19 +287,19 @@
 	-ms-transition: all 900ms ease;
 	-o-transition: all 900ms ease;
 	transition: all 900ms ease;
-	z-index: 999;
+	z-index: 9999 !important;
 }
 
 .slider-one .slider-one_buttons .theme-btn{
 	margin-right:var(--margin-right-15);
-	z-index: 999;
+	z-index: 9999 !important;
 }
 
 .slider-one .active .slider-one_buttons{
 	opacity: 1;
 	transform: scaleY(1);
 	transition-delay:1200ms;
-	z-index: 999;
+	z-index: 9999 !important;
 }
 
 .slider-one .owl-dots{
@@ -5975,6 +6043,7 @@ clients-two_column{
 
 .speaker-detail_subtitle{
 	margin-bottom: var(--margin-bottom-15);
+	text-transform: capitalize;
 }
 
 .speaker-detail_info{
@@ -7836,7 +7905,7 @@ blockquote{
 
 .shop-detail-section{
 	position:relative;
-	padding:95px 0px 70px;
+	padding:15px 0px 70px;
 }
 
 .product-details .basic-details{
@@ -8269,10 +8338,6 @@ blockquote{
 
 .shop-detail-section .product-info-tabs{
 	position:relative;
-	padding:30px 30px;
-	margin-top:40px;
-	background-color:#ffffff;
-	box-shadow:0px 0px 15px rgba(0,0,0,0.06);
 }
 
 .shop-detail-section .prod-tabs{
